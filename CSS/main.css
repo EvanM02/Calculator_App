@@ -71,3 +71,24 @@ button:hover {
     grid-gap: 20px;
     padding: 20px;
 }
+.calculator-keys {
+    font-size: 20px;
+}
+
+.dropdown {
+    z-index: 4;
+    width: 150px;
+    font-size: 20px;
+}
+#dropdownMenuLink {
+    background-color: black;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.dropdown-item {
+    background-color: black;
+
+    font-size: 15px;
+}
