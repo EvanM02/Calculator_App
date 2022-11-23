@@ -1,4 +1,7 @@
-
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -89,7 +92,7 @@
 
 /* This is the styling for smartphones */
 
-@media screen and (max-width: 600px) and  (orientation: portrait)  {
+@media screen and (max-width: 500px)  {
     .calculator-keys {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -97,7 +100,6 @@
         font-size: 5rem;
     }
     .calculator-keys {
-        font-size: 5rem !important;
         background-color: darkgreen;
     }
     .button {
