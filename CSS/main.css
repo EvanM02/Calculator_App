@@ -99,6 +99,9 @@ html {
         grid-gap: 1.5rem;
     }
     .calculator-keys {
-        font-size: 1.1rem;
+        font-size: 5rem;
+    }
+    .button {
+        font-size: 5rem;
     }
 }
