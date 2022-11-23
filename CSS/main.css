@@ -92,7 +92,7 @@ html {
 
 /* This is the styling for smartphones */
 
-@media screen and (max-width: 500px)  {
+@media screen and (max-width: 600px)  {
     .calculator-keys {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
