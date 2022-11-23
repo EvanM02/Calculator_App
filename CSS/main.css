@@ -1,4 +1,7 @@
-
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -7,11 +10,6 @@
 .calculator {
     border: 1.2px solid darkslategray;
     border-radius: 7px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
 }
 .calculator_screen {
     width: 100%;
@@ -65,8 +63,9 @@
 .calculator-keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 1.5rem;
+
 }
 .calculator-keys {
     font-size: 20px;
@@ -97,8 +96,7 @@
     .calculator-keys {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 1rem;
-        padding: 0px;
+        grid-gap: 1.5rem;
     }
     .calculator-keys {
         font-size: 1.1rem;
