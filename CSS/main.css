@@ -89,5 +89,8 @@ html {
     .calculator-keys {
         background-color: #92A8D1;
     }
+    #dropdownMenuLink {
+        background-color: #92A8D1; 
+    }
 
 }
