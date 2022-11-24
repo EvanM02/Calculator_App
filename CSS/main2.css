@@ -92,7 +92,9 @@ html {
     }
 
     .calculator_screen {
-        font-size: 2rem;
+        font-size: 4rem;
+        height: 70px;
+
     }
 }
 
