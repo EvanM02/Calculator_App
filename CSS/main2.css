@@ -113,13 +113,13 @@ html {
 
 @media screen and (max-width: 500px) {
     .calculator-keys {
-        font-size: 2rem;
+        font-size: 1rem;
         margin-left: 10%;
         margin-right: 10%;
     }
 
     .calculator_screen {
-        font-size: 3rem;
+        font-size: 2rem;
         height: 60px;
     }
 }
