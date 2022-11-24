@@ -1,6 +1,9 @@
 html {
     font-size: 70%;
     box-sizing: border-box;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 24%, rgba
+    (252,70,107,0.8950747535342262) 100%);
 }
 *, *::before, *::after {
     margin: 0;
@@ -10,6 +13,7 @@ html {
 .calculator {
     border: 1.2px solid darkslategray;
     border-radius: 7px;
+    
 }
 .calculator_screen {
     width: 100%;
@@ -23,36 +27,24 @@ html {
     padding-left: 20px;
     border-radius: 7px 7px 0px 0px;
 }
-.button {
-    height: 70px;
-    border-radius: 3px;
-    border: 1px solid darkslategray;
-    background-color: transparent;
-    font-size: 3.2rem;
-    color: black;
-    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,.06));
-    text-shadow: 0 1px rgba(255, 255, 255, .4);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5), 0 1px 0 0 rgba(255, 255, 255, .05); 
-}
-.button:hover {
-    background-color: #e1e1e1;
-}
 .operator {
     color: black;
     background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, .5));
     background-color: lightgray;
+    border-color:rgb(251, 251, 251);
+    border-radius: 10px;
 }
 .all-clear {
-    background-color: red;
-    border-color: darkslategray;
+    background-color: rgb(255, 0, 0);
+    border-color: rgb(255, 255, 255);
     color: #fff;
 }
 .all-clear:hover {
-    background-color: darkred;
+    background-color: rgb(255, 0, 0);
 }
 .equal-sign {
     background-color: blue;
-    border-color: darkslategray;
+    border-color: rgb(255, 255, 255);
     color: #fff;
     height: 100%;
     grid-area: 2 / 4 / 6 / 5;
@@ -65,28 +57,23 @@ html {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 1.5rem;
-
-}
-.calculator-keys {
-    font-size: 20px;
 }
 
 /*Drop down menu */
+
 .dropdown {
     z-index: 4;
-    width: 150px;
-    font-size: 20px;
 }
 #dropdownMenuLink {
-    background-color: black;
     color: black;
+    background-color: #92A8D1;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.6rem;
+    z-index: 4;
 }
 
 .dropdown-item {
-    background-color: black;
-
+    z-index: 4;
     font-size: 15px;
 }
 
@@ -100,22 +87,7 @@ html {
         font-size: 5rem;
     }
     .calculator-keys {
-        background-color: darkgreen;
+        background-color: #92A8D1;
     }
-    .button {
-        font-size: 5rem !important;
-        background-color: darkmagenta;
-    }
-    .calculator_screen {
-        width: 100%;
-        font-size: 5rem;
-        height: 80px;
-        border: none;
-        background-color: black;
-        color: white;
-        text-align: right;
-        padding-right: 20px;
-        padding-left: 20px;
-        border-radius: 7px 7px 0px 0px;
-    }
+
 }
