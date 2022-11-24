@@ -6,7 +6,9 @@
         <meta name="description" content="A basic HTML, CSS and JavaScript Calculator">
         <meta name="color-scheme" content="dark light">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./CSS/main.css">
+        <!-- <link rel="stylesheet" type="text/css" href="./CSS/main.css"> -->
+        <link rel="stylesheet" type="text/css" href="./CSS/main2.css">
+
         <script src="./JavaScript/main.js" defer></script> 
 
         <!-- bootstrap links-->
@@ -17,8 +19,8 @@
     <body>
         
 <!--OTHER WEBSITE LINKS DROPDOWN MENU-->
-<div class="dropdown navbar-light">
-  <a class="btn btn-secondary dropdown-toggle " role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+<div class="dropdown">
+  <a class="btn dropdown-toggle " role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
       Websites
   </a>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" >
@@ -26,39 +28,44 @@
           <li><a class="dropdown-item" href="https://evanm02.github.io/Academy_Cinemas/"  >Academy Cinemas Website</a></li>
           <li><a class="dropdown-item" href="https://evanm02.github.io/Slideshow_and_Countdown/"  >SlideShow and Countdown</a></li>
           <li><a class="dropdown-item" href="https://evanm02.github.io/Single_page_Website/"  >Single Page Website</a></li>
-	  <li><a class="dropdown-item" href="https://evanm02.github.io/Calculator_App/"  >Calculator App</a></li>
+          <li><a class="dropdown-item" href="https://evanm02.github.io/Calculator_App/"  >Calculator App</a></li>
           <li><a class="dropdown-item" href="https://evanm02.github.io/The_Space_Station/"  >The Space Station Website</a></li>
           <li><a class="dropdown-item" href="https://evanm02.github.io/Tic_Tac_Toe/"  >Tic Tac Toe</a></li>
           <li><a class="dropdown-item" href="https://evanm02.github.io/Pizza_Website/"  >Pizza Website</a></li>
           <li><a class="dropdown-item" href="https://evanm02.github.io/To_Do_App/"  >To Do App</a></li> 
-	  <li><a class="dropdown-item" href="https://evanm02.github.io/Tip_and_Tax_Calculator/"  >Tip and Tax Calculator</a></li> 
+          <li><a class="dropdown-item" href="https://evanm02.github.io/Tip_and_Tax_Calculator/"  >Tip and Tax Calculator</a></li> 
       </ul>
 </div>
 <!--END OF DROP DOWN MENU-->
 
         <!--START OF THE CALCULATOR-->
         <div class="calculator">
-        <input type="text" class="calculator_screen" value="0" disabled />
         <div class="calculator-keys">
+            
+
+            <input type="text" class="calculator_screen" value="0" disabled />
 
             <button type="button" class="operator" value="+">+</button>
             <button type="button" class="operator" value="-">-</button>
             <button type="button" class="operator" value="*">&times;</button>
             <button type="button" class="operator" value="/">&divide;</button>
 
-            <button type="button" value="7">7</button>
-            <button type="button" value="8">8</button>
-            <button type="button" value="9">9</button>
 
-            <button type="button" value="4">4</button>
-            <button type="button" value="5">5</button>
-            <button type="button" value="6">6</button>
+                <button type="button" value="7">7</button>
+                <button type="button" value="8">8</button>
+                <button type="button" value="9">9</button>
 
-            <button type="button" value="1">1</button>
-            <button type="button" value="2">2</button>
-            <button type="button" value="3">3</button>
+                <button type="button" value="4">4</button>
+                <button type="button" value="5">5</button>
+                <button type="button" value="6">6</button>
 
-            <button type="button" value="0">0</button>
+                <button type="button" value="1">1</button>
+                <button type="button" value="2">2</button>
+                <button type="button" value="3">3</button>
+
+
+
+            <button class="number_0" type="button" value="0">0</button>
 
             <button type="button" class="decimal function" value=".">.</button>
             <button type="button" class="all-clear function" value="all-clear">AC</button>

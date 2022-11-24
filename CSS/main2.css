@@ -1,0 +1,100 @@
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
+
+/* Nav dropdown button styling */
+.btn {
+    font-size: 1.5rem !important;
+}
+
+.dropdown-item {
+    font-size: 1.5rem !important;
+}
+
+
+
+/* Start of grid styling */
+.calculator-keys {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1in);
+    font-size: 3rem;
+    margin-left: 30%;
+    margin-right: 30%;
+
+
+}
+
+.calculator-keys button {
+    background-color: dodgerblue;
+    border-radius: 10px;
+    border-style: groove;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px darkgrey;
+}
+.calculator-keys button:active {
+    box-shadow: 0px 0px;
+}
+
+
+
+.calculator_screen {
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: black;
+    background-image: linear-gradient
+    (to bottom, transparent, transparent 50%, rgba(167, 161, 161, 0.5));
+    color: white;
+    text-align: right;
+    border-radius: 7px 7px 0px 0px;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 1;
+
+}
+.operator {
+    color: black !important;
+    background-color: lightgray !important;
+    border-radius: 10px !important;
+}
+
+.operator:nth-child(1) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+}
+.operator:nth-child(2) {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.operator:nth-child(3) {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+.operator:nth-child(4) {
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.all-clear {
+    background-color: rgb(255, 0, 0) !important;
+    border-color: rgb(255, 255, 255);
+    color: #fff;
+}
+
+
+
+
+
+
+
+.equal-sign  {
+    background-color: aqua !important;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    grid-row-end: span 4;
+}
+
