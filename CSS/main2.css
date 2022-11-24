@@ -86,6 +86,8 @@ html {
     grid-row-end: span 4;
 }
 
+/* Tablet styling */
+
 @media screen and (min-width: 700px) and (max-width: 880px) and (orientation: landscape) {
     .calculator-keys {
         font-size: 2.5rem;
@@ -101,6 +103,8 @@ html {
     .calculator-keys {
         font-size: 2.5rem;
         margin-left: 20%;
+        margin-top: 10%;
+
         margin-right: 10%;
     }
 
@@ -115,6 +119,8 @@ html {
     .calculator-keys {
         font-size: 2.5rem;
         margin-left: 10%;
+        margin-top: 10%;
+
         margin-right: 0%;
     }
 
@@ -129,6 +135,8 @@ html {
     .calculator-keys {
         font-size: 2.5rem;
         margin-left: 20%;
+        margin-top: 10%;
+
         margin-right: 20%;
 
     }
@@ -139,6 +147,7 @@ html {
     }
 }
 
+/* Smartphone styling */
 @media screen and (max-width: 500px) and (orientation: portrait) {
 
 
@@ -148,14 +157,15 @@ html {
         grid-template-columns: repeat(4, 6rem);
         font-size: 2rem;
         margin-left: 0%;
+        margin-top: 10%;
         margin-right: 0%;
 
 
     }
 
     .calculator_screen {
-        font-size: 3rem;
-        height: 40px;
+        font-size: 3.4rem;
+        height: 50px;
     }
 
 
