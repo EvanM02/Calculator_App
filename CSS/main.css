@@ -6,11 +6,31 @@ html {
 /* Nav dropdown button styling */
 .btn {
   font-size: 1.5rem !important;
+  border-width: 2px !important;
+  border-color: black !important;
 }
-
+.dropdown-menu {
+  transition: all 0.5s ease-in-out;
+  background-color: #CDCDCD !important;
+  box-shadow: 4px 4px black;
+}
 .dropdown-item {
   font-size: 1.5rem !important;
+  animation: 2s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+
 }
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 
 /* Start of grid styling */
 .calculator-keys {
