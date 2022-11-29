@@ -2,6 +2,12 @@ html {
   font-size: 70%;
   box-sizing: border-box;
 }
+body {
+  background: rgb(238,174,202);
+  background: linear-gradient(90deg, rgba(238,174,202,1) 
+  0%, rgba(110,110,110,1) 100%);
+
+}
 
 /* Nav dropdown button styling */
 .btn {
@@ -11,15 +17,14 @@ html {
 }
 .dropdown-menu {
   transition: all 0.5s ease-in-out;
-  background-color: #CDCDCD !important;
-  box-shadow: 4px 4px black;
+  background-color: rgb(238,174,202) !important;
+  box-shadow: 4px 4px rgb(229, 155, 155);
 }
 .dropdown-item {
   font-size: 1.5rem !important;
   animation: 2s fadeIn;
   animation-fill-mode: forwards;
   visibility: hidden;
-
 }
 
 @keyframes fadeIn {
@@ -118,8 +123,6 @@ html {
   .calculator-keys {
     font-size: 2.5rem;
     margin-left: 20%;
-    margin-top: 10%;
-
     margin-right: 10%;
   }
 
@@ -129,12 +132,10 @@ html {
   }
 }
 
-@media screen and (min-width: 502px) and (max-width: 650px) and (orientation: landscape) {
+@media screen  and (max-width: 650px)  {
   .calculator-keys {
     font-size: 2.5rem;
     margin-left: 10%;
-    margin-top: 10%;
-
     margin-right: 0%;
   }
 
@@ -144,11 +145,17 @@ html {
   }
 }
 
+@media screen  and (max-width: 600px) {
+  .calculator-keys {
+    font-size: 2.5rem;
+    margin-left: 5%;
+  }
+}
+
 @media screen and (min-width: 600px) and (max-width: 880px) and (orientation: portrait) {
   .calculator-keys {
     font-size: 2.5rem;
     margin-left: 10%;
-    margin-top: 10%;
     margin-right: 20%;
   }
 
@@ -164,14 +171,31 @@ html {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(4, 6rem);
-    font-size: 2rem;
-    margin-left: 5%;
-    margin-top: 10%;
+    font-size: 2.5rem;
+    margin-left: 17%;
+    margin-top: 15%;
     margin-right: 0%;
   }
 
   .calculator_screen {
     font-size: 3.4rem;
     height: 50px;
+  }
+}
+@media screen and (max-width: 390px) and (orientation: portrait) {
+  .calculator-keys {
+    margin-left: 11%;
+  }
+}
+@media screen and (max-width: 370px) and (orientation: portrait) {
+  .calculator-keys {
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 346px) and (orientation: portrait) {
+  .calculator-keys {
+    margin-left: 0%;
+    gap: 0rem;
+
   }
 }
