@@ -3,10 +3,12 @@ html {
   box-sizing: border-box;
 }
 body {
-  background: rgb(238,174,202);
-  background: linear-gradient(90deg, rgba(238,174,202,1) 
-  0%, rgba(110,110,110,1) 100%);
-
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(110, 110, 110, 1) 100%
+  );
 }
 
 /* Nav dropdown button styling */
@@ -17,7 +19,7 @@ body {
 }
 .dropdown-menu {
   transition: all 0.5s ease-in-out;
-  background-color: rgb(238,174,202) !important;
+  background-color: rgb(238, 174, 202) !important;
   box-shadow: 4px 4px rgb(229, 155, 155);
 }
 .dropdown-item {
@@ -29,13 +31,13 @@ body {
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
-    }
-    100% {
-      visibility: visible;
-      opacity: 1;
-    }
+    opacity: 0;
   }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 
 /* Start of grid styling */
 .calculator-keys {
@@ -132,7 +134,7 @@ body {
   }
 }
 
-@media screen  and (max-width: 650px)  {
+@media screen and (max-width: 650px) {
   .calculator-keys {
     font-size: 2.5rem;
     margin-left: 10%;
@@ -145,7 +147,7 @@ body {
   }
 }
 
-@media screen  and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .calculator-keys {
     font-size: 2.5rem;
     margin-left: 5%;
@@ -196,6 +198,5 @@ body {
   .calculator-keys {
     margin-left: 0%;
     gap: 0rem;
-
   }
 }
